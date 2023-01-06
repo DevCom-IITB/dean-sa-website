@@ -30,6 +30,7 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -97,13 +98,52 @@
     </nav>
     <!-- Navbar End -->
 
+    <!-- main  -->
+        <div class="container-fluid container my-5">
+            <div class="row">
+                <div class="col-sm-3 col-md-2 p-2 text-dark rounded-3 sidebar" style="background-color: #8cd3ea;">
+                    <li type="button" class="border-bottom p-2" onclick="myfunc()">Hostels</li>
+                    <li type="button" class="border-bottom p-2" onclick="myfunc2()">HCU</li>
+                    <li type="button" class="border-bottom p-2" onclick="myfunc3()">HA</li>
+                    <li type="button" class="border-bottom p-2" onclick="myfunc4()">HRM</li>
+                </div>
+                <div class="col-sm-9 col-md-10 mt-2">
+                    <!-- Main content -->
+                    <div class="content p-4 rounded-3" id="content" >
+                        <p>IIT Bombay has 17 Hostels to cater to the accommodation of students at IIT Bombay out of which Hostel No 1 to 9 and 12, 13, 14 and 15(A and B wing) are for boys whereas Hostel No 10, 10A, 11 and 15(C wing) are girls hostels.</p>
+                        <p>Every hostel has washing and ironing facilities, a computer room, a TV, sports grounds and indoor games like Table Tennis, Carrom Board, Chess etc. The access rules vary, but in general, these facilities can be availed of against your I-Card. There is internet connection in each room.</p>
+                        <p>Serveral hostels have shops in them to meet daily needs and requirements and also provide stationary, xerox and printing facilities.</p>
+                        <p>Messes are present in each individual hostel. These messes serve food 4 times a day. There are serveral additional food outlets spread around the campus if a student may choose to visit. </p>
+                        <p>Further details about individual hostels can be found here</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
 
-    
+            <script>
+                function myfunc() {
+                    document.getElementById('content').innerHTML 
+                    
+                    = "<p>IIT Bombay has 17 Hostels to cater to the accommodation of students at IIT Bombay out of which Hostel No 1 to 9 and 12, 13, 14 and 15(A and B wing) are for boys whereas Hostel No 10, 10A, 11 and 15(C wing) are girls hostels.</p> <p> Every hostel has washing and ironing facilities, a computer room, a TV, sports grounds and indoor games like Table Tennis, Carrom Board, Chess etc.The access rules vary, but in general, these facilities can be availed of against your I - Card.There is internet connection in each room.</p > <p>Serveral hostels have shops in them to meet daily needs and requirements and also provide stationary, xerox and printing facilities.</p> < p > Messes are present in each individual hostel.These messes serve food 4 times a day.There are serveral additional food outlets spread around the campus if a student may choose to visit. </p >    <p>Further details about individual hostels can be found here</p>"
+                         
+                }
 
- 
+                function myfunc2() {
+                        document.getElementById('content').innerHTML = "<h3 class='text-warning'>this is test from func2. see if it is working or not</h3>"
+                    }
+                
+                function myfunc3() {
+                        document.getElementById('content').innerHTML = "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At explicabo praesentium doloremque accusamus, cupiditateerror! Quibusdam exercitationem ipsa vel consequuntur, officiis enim, omnis ex non animi quos veritatis isteasperiores reiciendis magnam ab temporibus esse.Aliquid veniam earum, accusamus totam ut placeat, consecteturassumenda asperiores a adipisci pariatur dolorem officia.</p > "
+                    }
+                
+                function myfunc4() {
+                        document.getElementById('content').innerHTML = "<h3 class='text-warning'>this is test from func2. see if it is working or not</h3>"
+                    }
+            </script>
+    <!-- main end  -->
 
-
-
+  
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-body footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
