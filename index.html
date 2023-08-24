@@ -30,6 +30,10 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -181,7 +185,7 @@
             <div class="navbar-nav mx-auto p-3 p-lg-0">
                 <a href="index.html" class="nav-item nav-link active"><button
                         class="btn btn-primary p-0 px-2">HOME</button></a>
-                <a href="hostels.html" class="nav-item text-dark nav-link">HOSTELS</a>
+                <!-- <a href="hostels.html" class="nav-item text-dark nav-link">HOSTELS</a> -->
                 <a href="https://www.iitb.ac.in/swc" target="_blank" class="nav-item text-dark nav-link">SWC</a>
                 <div class="nav-item dropdown">
                     <a href="#" target="_blank" class="nav-link text-dark dropdown-toggle"
@@ -352,11 +356,12 @@
                 <div class="rounded-3 mb-3" style="background-color: #A1C1FF88;">
                     <div class="row flex-lg-row align-items-center">
                         <div class="col-lg-6">
-                            <img src="img/deansa.jpg" class="d-block mx-lg-auto img-fluid rounded-3" alt="Bootstrap Themes" width="700" height="5vh" loading="lazy">
+                            <img src="img/deansa.jpg" class="d-block mx-lg-auto img-fluid rounded-3 p-3 border" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
                         </div>
-                        <div class="col-lg-6 py-2 py-md-0">
-                            <h2>Suryanarayana Doola</h2>
-                            <p class="text-md-start text-center">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+                        <div class="col-lg-6 py-2 py-md-0" style="font-family: 'Roboto Slab', serif;">
+                            <h2 class="text-center fs-4 mt-3" style="padding-right: 1px;">Prof. Suryanarayana Doola</h2>
+                            <p class="text-center fw-bold">DeanSA</p>
+                            <p class="text-md-start text-center">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system and extensive prebuilt components.</p>
                         </div>
                     </div>
                 </div>
@@ -367,11 +372,12 @@
                 <div class="rounded-3 " style="background-color: #A1C1FF88;">
                     <div class="row flex-lg-row align-items-center">
                         <div class="col-lg-6">
-                            <img src="img/adeansa.jpg" class="d-block mx-lg-auto img-fluid rounded-3" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+                            <img src="img/adeansa.jpg" class="d-block mx-lg-auto img-fluid rounded-3 p-3 border" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
                         </div>
-                        <div class="col-lg-6 py-2 py-md-0">
-                            <h2>Atul Shrivastava</h2>
-                            <p class="text-md-start text-center">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+                        <div class="col-lg-6 py-2 py-md-0" style="font-family: 'Roboto Slab', serif;">
+                            <h2 class="text-center fs-4 mt-3">Prof. Atul <br> Shrivastava</h2>
+                            <p class="text-center fw-bold">ADeanSA</p>
+                            <p class="text-md-start text-center">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system and extensive prebuilt components.</p>
                         </div>
                     </div>
                 </div>
@@ -380,9 +386,48 @@
 
         <!-- iframe div -->
         <div class="row mt-4">
-            <!-- <div class="col-lg-5 text-white rounded-3" style="height: 100vh;"> -->
-            <div class="col-lg-10 text-white rounded-3" style="height: 100vh;">
-                <iframe src="https://www.insti.app/calendar?sandbox=true" height="100%" width="100%" frameborder="0"></iframe>
+            <div class="col-lg-6" style="height: 100vh; padding: 20px;">
+                <h3 class="text-center mb-4">Calendar and Events</h3>
+                <iframe src="https://www.insti.app/calendar?sandbox=true" height="500px" width="500px" frameborder="0"></iframe>
+            </div>
+            <div class="col-lg-6" style="height: 100vh; padding: 20px;">
+                <!-- Options -->
+                <h3 class="text-center mb-4">Hostels</h3>
+                <div class="options mb-4 d-flex justify-content-center flex-wrap">
+                    <button class="btn btn-primary m-2" onclick="changeText('option1')">Hostels</button>
+                    <button class="btn btn-primary m-2" onclick="changeText('option2')">HCU</button>
+                    <button class="btn btn-primary m-2" onclick="changeText('option3')">HA</button>
+                </div>
+
+                <!-- Display Area -->
+                <div id="displayText">
+                    IIT Bombay has 17 Hostels to cater to the accommodation of students at IIT Bombay out of which Hostel No 1 to 9 and 12, 13, 14 and 15(A and B wing) are for boys whereas Hostel No 10, 10A, 11 and 15(C wing) are girls hostels.
+                    Every hostel has washing and ironing facilities, a computer room, a TV, sports grounds and indoor games like Table Tennis, Carrom Board, Chess etc. The access rules vary, but in general, these facilities can be availed of against your I-Card. There is internet connection in each room.
+                    Serveral hostels have shops in them to meet daily needs and requirements and also provide stationary, xerox and printing facilities.
+                    Messes are present in each individual hostel. These messes serve food 4 times a day. There are serveral additional food outlets spread around the campus if a student may choose to visit.
+                    Further details about individual hostels can be found here.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container functioning p-4 text-black-50 rounded-3 mb-4" style="background-color: #A1C1FF88;">
+        <h3 class="mb-4 title">Acts, Statutes & Ordinances</h3>
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-4 mb-2">
+                <div class="link-container border rounded-lg" style="background-color: #eff6f7;">
+                    <a href="https://www.iitb.ac.in/en/about-iit-bombay/institutes-technology-act" class="d-block text-center py-2" style="color: black;">Acts</a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 mb-2">
+                <div class="link-container border rounded-lg" style="background-color: #eff6f7;">
+                    <a href="https://www.iitb.ac.in/en/about-iit-bombay/statutes-iit-bombay" class="d-block text-center py-2" style="color: black;">Statutes</a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 mb-2">
+                <div class="link-container border rounded-lg" style="background-color: #eff6f7;">
+                    <a href="#" class="d-block text-center py-2" style="color: black;">Ordinances</a>
+                </div>
             </div>
         </div>
     </div>
@@ -959,6 +1004,26 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+    <script>
+        function changeText(option) {
+            let displayDiv = document.getElementById('displayText');
+            
+            switch (option) {
+                case 'option1':
+                    displayDiv.innerHTML = "IIT Bombay has 17 Hostels to cater to the accommodation of students at IIT Bombay out of which Hostel No 1 to 9 and 12, 13, 14 and 15(A and B wing) are for boys whereas Hostel No 10, 10A, 11 and 15(C wing) are girls hostels. Every hostel has washing and ironing facilities, a computer room, a TV, sports grounds and indoor games like Table Tennis, Carrom Board, Chess etc. The access rules vary, but in general, these facilities can be availed of against your I-Card. There is internet connection in each room. Serveral hostels have shops in them to meet daily needs and requirements and also provide stationary, xerox and printing facilities. Messes are present in each individual hostel. These messes serve food 4 times a day. There are serveral additional food outlets spread around the campus if a student may choose to visit. Further details about individual hostels can be found here";
+                    break;
+                case 'option2':
+                    displayDiv.innerHTML = "Random text for Option 2.";
+                    break;
+                case 'option3':
+                    displayDiv.innerHTML = "Random text for Option 3.";
+                    break;
+                default:
+                    displayDiv.innerHTML = "IIT Bombay has 17 Hostels to cater to the accommodation of students at IIT Bombay out of which Hostel No 1 to 9 and 12, 13, 14 and 15(A and B wing) are for boys whereas Hostel No 10, 10A, 11 and 15(C wing) are girls hostels. Every hostel has washing and ironing facilities, a computer room, a TV, sports grounds and indoor games like Table Tennis, Carrom Board, Chess etc. The access rules vary, but in general, these facilities can be availed of against your I-Card. There is internet connection in each room. Serveral hostels have shops in them to meet daily needs and requirements and also provide stationary, xerox and printing facilities. Messes are present in each individual hostel. These messes serve food 4 times a day. There are serveral additional food outlets spread around the campus if a student may choose to visit. Further details about individual hostels can be found here";
+            }
+        }
+    </script>
 </body>
 
 </html>
